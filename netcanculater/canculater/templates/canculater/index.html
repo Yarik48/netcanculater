@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Calculator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="static/canculater/style.css">
+</head>
+<body >
+<div  align="center">
+<div>
+    <input  type="text" id="display" readonly  style="--smooth-corners: 8" oninput="autoExpand(this)" align="center"> <button onclick="clearDisplay()"  class="superellipseC" style="--smooth-corners: 4.33">clear</button>
+</div>
+
+    <div>
+        <button onclick="addNumber(1)" class="superellipse1" style="--smooth-corners: 4.33">1</button>
+        <button onclick="addNumber(2)" class="superellipse2" style="--smooth-corners: 4.33">2</button>
+        <button onclick="addNumber(3)" class="superellipse3" style="--smooth-corners: 4.33">3</button>
+        <button onclick="addOperator('*')" class="superellipseM" style="--smooth-corners: 4.33">*</button>
+    </div>
+    <div>
+        <button onclick="addNumber(4)"  class="superellipse4" style="--smooth-corners: 4.33">4</button>
+        <button onclick="addNumber(5)" class="superellipse5" style="--smooth-corners: 4.33">5</button>
+        <button onclick="addNumber(6)" class="superellipse6" style="--smooth-corners: 4.33">6</button>
+        <button onclick="addOperator('-')"class="superellipseMi" style="--smooth-corners: 4.33">-</button>
+    </div>
+<div>
+    <button onclick="addNumber(7)" class="superellipse" style="--smooth-corners: 4.33">7</button>
+    <button onclick="addNumber(8)"class="superellipse8" style="--smooth-corners: 4.33">8</button>
+    <button onclick="addNumber(9)"class="superellipse9" style="--smooth-corners: 4.33">9</button>
+    <button onclick="addOperator('+')" class="superellipseP" style="--smooth-corners: 4.33">+</button>
+</div>
+
+
+
+<div>
+    <button onclick="addNumber(0)" class="superellipse0" style="--smooth-corners: 4.33">0</button>
+    <button onclick="addOperator('/')" class="superellipseD" style="--smooth-corners: 4.33">/</button>
+    <button onclick="addOperator('%')" class="superellipsePr" style="--smooth-corners: 4.33">%</button>
+    <button onclick="calculate()"  class="superellipseR" style="--smooth-corners: 4.33">=</button>
+</div>
+</div>
+<script src="static/canculater/main.js"></script>
+</body>
+</html>
